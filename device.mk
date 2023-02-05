@@ -146,6 +146,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Display
 PRODUCT_VENDOR_PROPERTIES += \
+    persist.sys.sf.native_mode=258 \
     ro.vendor.display.paneltype=2 \
     ro.vendor.display.sensortype=2 \
     vendor.display.qdcm.mode_combine=1 \
