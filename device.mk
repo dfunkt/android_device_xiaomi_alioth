@@ -74,9 +74,6 @@ PRODUCT_ODM_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
-PRODUCT_PACKAGES += \
-    XiaomiDolby
-
 # Bluetooth
 PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
@@ -226,15 +223,6 @@ PRODUCT_PACKAGES += \
 
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
-# Media
-PRODUCT_PACKAGES += \
-    libavservices_minijail_vendor \
-    libcodec2_soft_common.vendor \
-    libsfplugin_ccodec_utils.vendor
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml
-
 # Enable 64-bit mediaserver
 PRODUCT_VENDOR_PROPERTIES += \
     ro.mediaserver.64b.enable=true
@@ -375,11 +363,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
     android.hardware.gatekeeper@1.0.vendor \
     android.hardware.keymaster@4.1.vendor \
-    android.hardware.neuralnetworks@1.3.vendor
-
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v33/arm/arch-arm-armv7-a-neon/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
-    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
+    android.hardware.neuralnetworks@1.3.vendor \
 
 # VPP tunings
 PRODUCT_COPY_FILES += \
