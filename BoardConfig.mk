@@ -125,7 +125,7 @@ BOARD_RAMDISK_USE_LZ4 := true
 
 KERNEL_DEFCONFIG := alioth_defconfig
 
-KERNEL_LLVM_SUPPORT := true
+KERNEL_FULL_LLVM := true
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
