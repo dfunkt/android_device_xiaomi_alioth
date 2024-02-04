@@ -68,6 +68,7 @@ PRODUCT_ODM_PROPERTIES += \
     vendor.audio.feature.dynamic_ecns.enable=false \
     vendor.audio.feature.spkr_prot.enable=false \
     vendor.audio.hal.output.suspend.supported=false \
+    vendor.audio.offload.buffer.size.kb=256 \
     vendor.audio.offload.multiple.enabled=true \
     vendor.audio.offload.track.enable=false
 
