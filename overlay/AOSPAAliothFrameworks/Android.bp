@@ -15,5 +15,5 @@
 runtime_resource_overlay {
     name: "AOSPAAliothFrameworks",
     sdk_version: "current",
-    product_specific: true,
+    system_ext_specific: true,
 }
